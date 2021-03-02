@@ -1,0 +1,184 @@
+.container{
+  padding:50px;
+}
+.firstheading{
+  margin-bottom:35px;
+}
+
+.btn{
+margin-right:60px;
+padding:0 35px;              /*Paddingnotworking**/
+}
+.name{
+  font-size:1.5rem;
+
+}
+.navbar-nav{
+  position:relative;
+
+}
+/* convertednavbarloginsignupintobuttonstoadjustthesymmetryneedtosetsomemarginstobuttons */
+.navcont{
+  margin-top:1px;
+}
+/* needtofindmoreefficientway */
+.navbtn{
+margin:6px 1px 3px 9px;
+/* closed-convertednavbarloginsignupintobuttonstoadjustthesymmetryneedtosetsomemarginstobuttons */
+
+
+}
+.list{
+  position:absolute;
+  left:0;
+}
+#intro{
+
+  padding-bottom:7% 15%;
+
+}
+.quote{
+  line-height:1.5;
+}
+.youcant{
+  height:350px;
+
+}
+.test{
+  height:100px;
+  width:75px;
+}
+/******************************************CatalogueSection********/
+#cat{
+  background-color:#ff4c68;
+
+}
+.books{
+  margin-bottom:5px;
+  width:226px;
+  height:310px;
+}
+.carousel-item{
+  padding:3% 15%;
+}
+.headingsectioncat{
+  padding-top:35px;
+  padding-bottom:25px;
+text-align:center;
+font-size:3.5rem;
+color:white;
+font-family: 'Noto Sans HK', sans-serif;
+font-weight:bold;}
+/* tomaketextbolder */
+em{
+  color:#FFFF00;
+  font-family: 'Oswald', sans-serif;
+  font-weight:bolder;
+  font-size:1rem;
+}
+.navbar{  background-color:#f4f6ff;
+}
+.container{
+  margin-top:100px;
+}
+ /* usingcontaineres */
+.books{
+  padding:0 15px;
+}
+.two{
+  text-align:center;
+}
+
+/* ***************************CONTACTSECTION ************************************/
+#contact{
+  padding:7% 15%;
+}
+
+.icon{
+  margin:0 10px 15px; /*top left-right bottom*/
+
+}
+.icons{
+  text-align:center;
+}
+
+
+#practice{
+
+padding:7% 15%;
+
+}
+.divpractsection{
+  margin-bottom:20px;
+}
+/* fontsizenotworking */
+.headingpractsection{
+  padding:35px 5px;
+  text-align:center;
+  font-size:3.7rem;
+}
+
+.practicecard{
+  text-align:center;
+}
+/* usingmarginautowillmaketheimageinthecentewrtitsdivision */
+.bookincard{
+  margin:auto;
+  height:15rem;
+  width:13rem;
+}
+
+
+.card{
+  height:19rem;
+}
+
+.card-body{
+  text-align:center;
+}
+.cartbtn{
+  padding:3px 3px 3px 3px;
+
+  margin-top:2px;
+  margin-left:3px;
+  margin-right:3px;
+}
+
+.pricecard{
+  height:24.5rem;
+  width:15.5rem;
+}
+.addtocart{
+  margin-left:2px;
+}
+
+.fa-shopping-cart{
+  margin-right:5px;
+}
+
+.writer{
+  color:#3d6cb9;
+}
+
+.firstcardcat{
+  margin-bottom:40px;
+}
+.paddingto5{
+  padding-left:5px;
+  padding-right:5px;
+}
+/* howtosetpaddingoleft&rightwithasinglelinewithtopbottomunaffected */
+
+/* Contactsection */
+#contact{
+  background-color:#efdfbf;
+}
+
+.personalicon1{
+  margin-right:2px;
+
+}
+
+.personalicon2{
+  margin-left:2px;
+}
