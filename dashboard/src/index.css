@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.wrapper{
+  height: 100%;
+  width: 300px;
+  position: relative;
+}
+.wrapper .menu-btn{
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  background: #4a4a4a;
+  color: #fff;
+  height: 45px;
+  width: 45px;
+  z-index: 9999;
+  border: 1px solid #333;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+#btn:checked ~ .menu-btn{
+  left: 247px;
+}
+.wrapper .menu-btn i{
+  position: absolute;
+  transform: ;
+  font-size: 23px;
+  transition: all 0.3s ease;
+}
+.wrapper .menu-btn i.fa-times{
+  opacity: 0;
+}
+#btn:checked ~ .menu-btn i.fa-times{
+  opacity: 1;
+  transform: rotate(-180deg);
+}
+#btn:checked ~ .menu-btn i.fa-bars{
+  opacity: 0;
+  transform: rotate(180deg);
+}
+#sidebar{
+  position: fixed;
+  background: #404040;
+  height: 100%;
+  width: 270px;
+  overflow: hidden;
+  left: -270px;
+  transition: all 0.3s ease;
+}
+#btn:checked ~ #sidebar{
+  left: 0;
+}
+#sidebar .title{
+  line-height: 65px;
+  text-align: center;
+  background: #333;
+  font-size: 25px;
+  font-weight: 600;
+  color: #f2f2f2;
+  border-bottom: 1px solid #222;
+}
+#sidebar .list-items{
+  position: relative;
+  background: #404040;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+}
+#sidebar .list-items li{
+  padding-left: 40px;
+  line-height: 50px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid #333;
+  transition: all 0.3s ease;
+}
+#sidebar .list-items li:hover{
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  box-shadow: 0 0px 10px 3px #222;
+}
+#sidebar .list-items li:first-child{
+  border-top: none;
+}
+#sidebar .list-items li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+#sidebar .list-items li a i{
+  margin-right: 20px;
+}
+#sidebar .list-items .icons{
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  position: absolute;
+  bottom: 100px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#sidebar .list-items .icons a{
+  height: 100%;
+  width: 40px;
+  display: block;
+  margin: 0 5px;
+  font-size: 18px;
+  color: #f2f2f2;
+  background: #4a4a4a;
+  border-radius: 5px;
+  border: 1px solid #383838;
+  transition: all 0.3s ease;
+}
+#sidebar .list-items .icons a:hover{
+  background: #404040;
+}
+.list-items .icons a:first-child{
+  margin-left: 0px;
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #202020;
+  z-index: -1;
+  width: 100%;
+  text-align: center;
+}
+.content .header{
+  font-size: 45px;
+  font-weight: 700;
+}
+.content p{
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.logo{
+  height: 40px;
+  width: 50px;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+.brand{
+  padding: 5px;
+  display: flex;
+  text-align: center;
+  /* justify-content: center; */
+}
+
+
+
+
+/* second css */
+
+
+.ag-format-container {
+  width: 1142px;
+  margin: 0 auto;
+}
+
+
+body {
+  background-color: #000;
+}
+.ag-courses_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  padding: 50px 0;
+}
+.ag-courses_item {
+  -ms-flex-preferred-size: calc(33.33333% - 30px);
+  flex-basis: calc(33.33333% - 30px);
+
+  margin: 0 15px 30px;
+
+  overflow: hidden;
+
+  border-radius: 28px;
+}
+.ag-courses-item_link {
+  display: block;
+  padding: 30px 20px;
+  background-color: #121212;
+
+  overflow: hidden;
+
+  position: relative;
+}
+.ag-courses-item_link:hover,
+.ag-courses-item_link:hover .ag-courses-item_date {
+  text-decoration: none;
+  color: #FFF;
+}
+.ag-courses-item_link:hover .ag-courses-item_bg {
+  -webkit-transform: scale(10);
+  -ms-transform: scale(10);
+  transform: scale(10);
+}
+.ag-courses-item_title {
+  min-height: 87px;
+  margin: 0 0 25px;
+
+  overflow: hidden;
+
+  font-weight: bold;
+  font-size: 30px;
+  color: #FFF;
+
+  z-index: 2;
+  position: relative;
+}
+.ag-courses-item_date-box {
+  font-size: 18px;
+  color: #FFF;
+
+  z-index: 2;
+  position: relative;
+}
+.ag-courses-item_date {
+  font-weight: bold;
+  color: #f9b234;
+
+  -webkit-transition: color .5s ease;
+  -o-transition: color .5s ease;
+  transition: color .5s ease
+}
+.ag-courses-item_bg {
+  height: 128px;
+  width: 128px;
+  background-color: #f9b234;
+
+  z-index: 1;
+  position: absolute;
+  top: -75px;
+  right: -75px;
+
+  border-radius: 50%;
+
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+.ag-courses_item:nth-child(2n) .ag-courses-item_bg {
+  background-color: #3ecd5e;
+}
+.ag-courses_item:nth-child(3n) .ag-courses-item_bg {
+  background-color: #e44002;
+}
+.ag-courses_item:nth-child(4n) .ag-courses-item_bg {
+  background-color: #952aff;
+}
+.ag-courses_item:nth-child(5n) .ag-courses-item_bg {
+  background-color: #cd3e94;
+}
+.ag-courses_item:nth-child(6n) .ag-courses-item_bg {
+  background-color: #4c49ea;
+}
+
+
+
+@media only screen and (max-width: 979px) {
+  .ag-courses_item {
+    -ms-flex-preferred-size: calc(50% - 30px);
+    flex-basis: calc(50% - 30px);
+  }
+  .ag-courses-item_title {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ag-format-container {
+    width: 96%;
+  }
+
+}
+@media only screen and (max-width: 639px) {
+  .ag-courses_item {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+  .ag-courses-item_title {
+    min-height: 72px;
+    line-height: 1;
+
+    font-size: 24px;
+  }
+  .ag-courses-item_link {
+    padding: 22px 40px;
+  }
+  .ag-courses-item_date-box {
+    font-size: 16px;
+  }
+}
+
+.view{
+  /* margin-left: 30px;
+  margin-top: 50px; */
+  width: 80px;
+}
+/* .container{
+  z-index: -1;
+} */
+
+.side{
+  z-index: 4;
+}
